@@ -17,14 +17,14 @@
 
 Deep Learning == Neural Network은 인간의 뇌와 신경 체계 수학적 Model을 의미한다. 
 
-<img width = "700" height = "300" alt="스크린샷 2024-07-01 오후 3 33 14" src="https://github.com/Heo-Jeong-Eun/Google-Machine-Learning-Bootcamp/assets/60500256/e1a86e0f-6769-4674-9e8a-c64d8cfdd4a8">
+<img width = "700" height = "350" alt="스크린샷 2024-07-01 오후 3 33 14" src="https://github.com/Heo-Jeong-Eun/Google-Machine-Learning-Bootcamp/assets/60500256/e1a86e0f-6769-4674-9e8a-c64d8cfdd4a8">
 
 > 주택 가격 예측 문제 <br>
 > 6개의 집에 대한 Data, 집의 크기와 가격을 알고 있을 때, 집의 크기에 대해 집 값을 예측할 수 있는 함수를 도출한다. 
 
 간단한 신경망으로 생각했을 때, Input X, size of house가 Neuron, Node(A Single Neuron)으로 들어가고 Output Y, price를 출력한다. 
 
-<img width = "700" height = "300" alt="스크린샷 2024-07-01 오후 4 59 15" src="https://github.com/Heo-Jeong-Eun/Google-Machine-Learning-Bootcamp/assets/60500256/ad8f9803-0a2c-4b09-8472-ea4072ea3d9b">
+<img width = "700" height = "350" alt="스크린샷 2024-07-01 오후 4 59 15" src="https://github.com/Heo-Jeong-Eun/Google-Machine-Learning-Bootcamp/assets/60500256/ad8f9803-0a2c-4b09-8472-ea4072ea3d9b">
 
 Neuron을 여러 개 쌓아 더 큰 신경망 Model을 구현할 수 있고, 더 다양한 Feature를 사용한 신경망 Model은 위 사진과 같이 나타낼 수 있다. 
 
@@ -36,15 +36,15 @@ ML에서 Supervised Learning은 정답 Label이 주어진 Data를 이용해 학�
 
 앞서 살펴본 주택 가격 예측 문제도 신경망을 사용해 지도학습을 구현할 수 있다. 
 
-<img width = "700" height = "300" alt="스크린샷 2024-07-01 오후 3 45 13" src="https://github.com/Heo-Jeong-Eun/Google-Machine-Learning-Bootcamp/assets/60500256/fd2b6b68-68e8-4bef-bb76-6b949591fa64">
+<img width = "700" height = "350" alt="스크린샷 2024-07-01 오후 3 45 13" src="https://github.com/Heo-Jeong-Eun/Google-Machine-Learning-Bootcamp/assets/60500256/fd2b6b68-68e8-4bef-bb76-6b949591fa64">
 
 **분야에 따라 적용되는 신경망이 다르고 Data의 형태에 따라 Model 구현 방식이 다르다.** 
 
-<img width = "700" height = "300" alt="스크린샷 2024-07-01 오후 3 46 25" src="https://github.com/Heo-Jeong-Eun/Google-Machine-Learning-Bootcamp/assets/60500256/ef436510-0721-4c64-aec8-bece58137915">
+<img width = "700" height = "350" alt="스크린샷 2024-07-01 오후 3 46 25" src="https://github.com/Heo-Jeong-Eun/Google-Machine-Learning-Bootcamp/assets/60500256/ef436510-0721-4c64-aec8-bece58137915">
 
 Image Data의 경우 CNN 합성곱 신경망, 음성 Data(1차원의 시계열 Data로 나타나는 Sequence)는 RNN을 사용한다. 
 
-<img width = "700" height = "300" alt="스크린샷 2024-07-01 오후 3 50 35" src="https://github.com/Heo-Jeong-Eun/Google-Machine-Learning-Bootcamp/assets/60500256/205a98e7-b90a-42f6-aa0a-bff55d22d703">
+<img width = "700" height = "350" alt="스크린샷 2024-07-01 오후 3 50 35" src="https://github.com/Heo-Jeong-Eun/Google-Machine-Learning-Bootcamp/assets/60500256/205a98e7-b90a-42f6-aa0a-bff55d22d703">
 
 신경망 Model은 SW가 비구조적 Data를 잘 학습하도록 발전해왔다. 
 
@@ -55,7 +55,7 @@ Image Data의 경우 CNN 합성곱 신경망, 음성 Data(1차원의 시계열 D
 
 **Data 양의 증가, Computer 성능 향상, Algorithm 개선으로 성능이 향상 되었기 때문에 DL이 강력한 도구로 부상할 수 있었다.** 
 
-<img width = "700" height = "300" alt="스크린샷 2024-07-01 오후 3 52 20" src="https://github.com/Heo-Jeong-Eun/Google-Machine-Learning-Bootcamp/assets/60500256/381a5daf-3827-4047-ae76-5e99a5cc7368">
+<img width = "700" height = "350" alt="스크린샷 2024-07-01 오후 3 52 20" src="https://github.com/Heo-Jeong-Eun/Google-Machine-Learning-Bootcamp/assets/60500256/381a5daf-3827-4047-ae76-5e99a5cc7368">
 
 > Large NN / Medium NN / Small NN / Traditional Learning Algo
 
@@ -68,7 +68,7 @@ Image Data의 경우 CNN 합성곱 신경망, 음성 Data(1차원의 시계열 D
 
 - 신경망 함수의 활성화 함수 Sigmoid 함수를 ReLU 함수로 바꾸면서 경사 하강법 Algorithm 작동에 큰 성과가 있었다.
 
-<img width = "700" height = "300" alt="스크린샷_2024-07-01_오후_3 57 58" src="https://github.com/Heo-Jeong-Eun/Google-Machine-Learning-Bootcamp/assets/60500256/5b2b26e6-933c-4735-99f8-9745b216b428">
+<img width = "700" height = "250" alt="스크린샷_2024-07-01_오후_3 57 58" src="https://github.com/Heo-Jeong-Eun/Google-Machine-Learning-Bootcamp/assets/60500256/5b2b26e6-933c-4735-99f8-9745b216b428">
 
 **Sigmoid 함수** 
 
@@ -79,7 +79,7 @@ Image Data의 경우 CNN 합성곱 신경망, 음성 Data(1차원의 시계열 D
 - Input 값이 양수인 경우 미분 값이 1로 모두 동일하므로 0에 수렴할 가능성이 훨씬 적다.
 - Rectified Linear Unit, Rectify는 0과 결과 중 큰 값을 취하라는 의미이다 → **max(0, x)** / 0과 x중 더 큰 값을 선택한다. 만일 0보다 작은 경우에는 0이 되는 구조
 
-<img width = "700" height = "300" alt="스크린샷 2024-07-01 오후 4 10 47" src="https://github.com/Heo-Jeong-Eun/Google-Machine-Learning-Bootcamp/assets/60500256/99cb6495-bb3a-41bb-a8d4-1c6e2d37d672">
+<img width = "700" height = "350" alt="스크린샷 2024-07-01 오후 4 10 47" src="https://github.com/Heo-Jeong-Eun/Google-Machine-Learning-Bootcamp/assets/60500256/99cb6495-bb3a-41bb-a8d4-1c6e2d37d672">
 
 Sigmoid 함수에서 ReLU 변경하면서 Gradient Descent Algorithm을 더 빠르게 작동시키는 Algorithm을 만들었다. 
 
