@@ -5,6 +5,7 @@
 **Logistic Regression**은 **Binary Classification**를 위한 Algorithm이다. 
 
 <img width="635" alt="스크린샷 2024-07-03 오후 7 03 41" src="https://github.com/Heo-Jeong-Eun/Google-Machine-Learning-Bootcamp/assets/60500256/fbbb6ddf-07d9-410d-97dd-cc7edcdcda1e">
+
 Input Image가 있을 때, 고양이인지 아닌지 분류하는 Binary Classification 문제가 있다. 
 
 Image를 인식해 고양이라면 1, 아니면 0으로 Label을 출력한다. 
