@@ -1,3 +1,5 @@
+# Shallow Neural Network
+
 ## Neural Networks Overview
 
 NN을 구현하기 앞서 NN의 Overview를 알아 볼 것이다. 
