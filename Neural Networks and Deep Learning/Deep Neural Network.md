@@ -2,7 +2,7 @@
 
 ## Deep L-Layer Neural Network
 
-![스크린샷 2024-07-11 오전 10 40 06](https://github.com/user-attachments/assets/1094a6e3-27bc-4685-b28d-d22d3228a1c3)
+<img width="598" src="https://github.com/user-attachments/assets/1094a6e3-27bc-4685-b28d-d22d3228a1c3">
 
 **DL에서 Layer의 갯수**를 말할 때에는 보통 **Input Layer를 제외한 Output Layer와 Hidden Layer 갯수만을 말한다.** 
 
