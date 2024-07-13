@@ -27,7 +27,8 @@ NN은 위 3가지 Layer로 구성된다.
 a[0]은 Input x, a[1]은 첫 번째 Layer의 결과값, Sigmoid Function의 값을 나타내고, a[2]는 Y-hat을 나타낸다. 
 
 <img width="691" alt="스크린샷 2024-07-05 오후 9 40 53" src="https://github.com/user-attachments/assets/2fdf7e03-cd4b-415c-9612-c5f3225e9471">
-NN 표현 방법
+
+> NN 표현 방법
 
 <img width="355" alt="스크린샷 2024-07-05 오후 9 43 44" src="https://github.com/user-attachments/assets/c9aea595-8d93-4bcc-b4ad-9a3f98f053b8">
 
@@ -85,13 +86,14 @@ DL에서 주로 사용하는 Activation Function은 Sigmoid Function이나 tanh 
 
 <img width="693" alt="스크린샷 2024-07-05 오후 10 06 24" src="https://github.com/user-attachments/assets/2662328d-625d-4dec-8df4-bda7a5df49e9">
 
-DL Training에 자주 쓰이는 Activation Function
+> DL Training에 자주 쓰이는 Activation Function
 
 ## Why do you need Non-Linear Activation Functions?
 
 **DL Training에 쓰이는 Activation Function**은 모두 Linear Function이 아닌 **Non-Linear Function의 형태**이다. 
 
 <img width="693" alt="스크린샷 2024-07-05 오후 10 08 22" src="https://github.com/user-attachments/assets/018a16c9-4f43-4dfc-8888-7b1a7a46e531">
+
 NN Training 과정에서 오차를 최소화하는 Gradient Descent을 통해 매개변수를 수정했다. 
 
 **만약 Activation Function이 Linear Function이라면 NN을 거쳐 Training 하는 의미가 사라진다.** 
