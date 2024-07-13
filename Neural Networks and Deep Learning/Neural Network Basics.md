@@ -314,11 +314,11 @@ for loop이 아닌 np.dot()을 사용하게 되면 복잡한 연산 과정 없�
 
 BroadCasting을 사용하게 되면 훨씬 더 효율적인 Memory 사용이 가능해진다. 
 
-<img width="500" src="https://github.com/Heo-Jeong-Eun/Google-Machine-Learning-Bootcamp/assets/60500256/558f2060-5367-45e2-a3d3-55bba7197f53>
+<img width="500" src="https://github.com/Heo-Jeong-Eun/Google-Machine-Learning-Bootcamp/assets/60500256/558f2060-5367-45e2-a3d3-55bba7197f53">
 
 행이 아닌 열에도 BroadCasting은 활용 된다. 만일 후행 차원이 같지 않으면 BroadCasting 오류가 생기게 된다. 
 
-<img width="500" src="https://github.com/Heo-Jeong-Eun/Google-Machine-Learning-Bootcamp/assets/60500256/a13ff97f-9d4d-43ca-8a3c-b2bc3dd4602d>
+<img width="500" src="https://github.com/Heo-Jeong-Eun/Google-Machine-Learning-Bootcamp/assets/60500256/a13ff97f-9d4d-43ca-8a3c-b2bc3dd4602d">
 
 BroadCasting이 세로 방향으로만 이루어지는 것은 아니다. 
 
