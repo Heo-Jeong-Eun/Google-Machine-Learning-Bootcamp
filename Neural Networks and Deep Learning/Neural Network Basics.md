@@ -323,3 +323,5 @@ BroadCasting을 사용하게 되면 훨씬 더 효율적인 Memory 사용이 가
 BroadCasting이 세로 방향으로만 이루어지는 것은 아니다. 
 
 np.newaxis()로 새로운 축을 삽입해 가로, 세로 방향에서 BroadCasting이 일어나는 경우도 있다.
+
+> The Lecture Notes referred to <a href = 'https://www.deeplearning.ai/'>DeepLearning.AI</a>
