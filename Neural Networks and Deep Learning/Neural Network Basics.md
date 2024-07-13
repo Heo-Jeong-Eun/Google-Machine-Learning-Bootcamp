@@ -82,7 +82,7 @@ Output은 다음과 같다.
 
 <img width="716" alt="스크린샷 2024-07-03 오후 9 45 51" src="https://github.com/Heo-Jeong-Eun/Google-Machine-Learning-Bootcamp/assets/60500256/d5740185-2593-435b-bce7-b0cdde8edad0">
 
-![Untitled](https://github.com/Heo-Jeong-Eun/Google-Machine-Learning-Bootcamp/assets/60500256/253d4c1e-0be0-46c8-a0cd-87570791ea3c)
+<img width="500" src="https://github.com/Heo-Jeong-Eun/Google-Machine-Learning-Bootcamp/assets/60500256/253d4c1e-0be0-46c8-a0cd-87570791ea3c">
 
 위와 같은 Graph 모양을 가지는 Function를 Sigmoid라고 하며 아래와 같이 나타낸다. 
 
@@ -108,7 +108,7 @@ Y-hat == Y = 1에 대한 추정치이며 Sigmoid Function에
 
 Logistic Regression Cost Function를 통해 Y = Y-hat가 되는 것이 목적이다. 
 
-<img width="757" alt="스크린샷 2024-07-03 오후 10 35 38" src="https://github.com/Heo-Jeong-Eun/Google-Machine-Learning-Bootcamp/assets/60500256/1eb5beb3-fcc5-4643-9f12-6fba0e061588">
+<img width="500" alt="스크린샷 2024-07-03 오후 10 35 38" src="https://github.com/Heo-Jeong-Eun/Google-Machine-Learning-Bootcamp/assets/60500256/1eb5beb3-fcc5-4643-9f12-6fba0e061588">
 
 위 공식에서 x는 Training시킬 Image이고 y는 그에 대한 정답이다. 
 
@@ -116,7 +116,7 @@ Logistic Regression Cost Function를 통해 Y = Y-hat가 되는 것이 목적이
 
 따라서 **Loss Function = Y-hat - Y**를 나타낸다. 
 
-![스크린샷 2024-07-03 오후 10 39 04](https://github.com/Heo-Jeong-Eun/Google-Machine-Learning-Bootcamp/assets/60500256/f6408022-a8ff-4c70-906d-97b533bef7ca)
+<img width="757" src="https://github.com/Heo-Jeong-Eun/Google-Machine-Learning-Bootcamp/assets/60500256/f6408022-a8ff-4c70-906d-97b533bef7ca">
 
 x와 y가 m개 있기 때문에 이에 따른 Loss도 m개가 나올 것이다. 
 
@@ -130,13 +130,13 @@ Y = 1인 경우 Loss = -log(Y-hat)이고, **오차를 최대한 작게 만들기
 
 **Cost Function J(w, b)는 m개의 Loss 총 합을 다시 m으로 나누어 Loss의 평균치를 구하는 Function**이다. 
 
-![Untitled](https://github.com/Heo-Jeong-Eun/Google-Machine-Learning-Bootcamp/assets/60500256/919b0c4f-ede2-4b13-91ed-ff57b0af57e1)
+<img width="700" src="https://github.com/Heo-Jeong-Eun/Google-Machine-Learning-Bootcamp/assets/60500256/919b0c4f-ede2-4b13-91ed-ff57b0af57e1">
 
 > Cost Function
 
 Cost Function의 Graph는 위 사진과 같으며 매개변수 w, b를 합했기 때문에 Cost Function J(w, b)를 3차원 상으로 표현하게 되면 아래와 같다. 
 
-<img width="533" alt="스크린샷 2024-07-03 오후 10 54 11" src="https://github.com/Heo-Jeong-Eun/Google-Machine-Learning-Bootcamp/assets/60500256/7c15cf88-37b3-4f04-bfe3-3f067933333c">
+<img width="700" alt="스크린샷 2024-07-03 오후 10 54 11" src="https://github.com/Heo-Jeong-Eun/Google-Machine-Learning-Bootcamp/assets/60500256/7c15cf88-37b3-4f04-bfe3-3f067933333c">
 
 ### Cost Function VS Loss Function
 
@@ -152,7 +152,7 @@ Model의 정확도, 오차를 측정하는 Logistic Regression Cost Function에�
 
 Data 양이 많은 경우 Gradient Descent와 같은 Iterative 한 방법을 사용하면 계산량 측면에서도 효율적이기 때문에 Gradient Descent를 사용한다. 
 
-<img width="666" alt="스크린샷 2024-07-03 오후 11 22 08" src="https://github.com/Heo-Jeong-Eun/Google-Machine-Learning-Bootcamp/assets/60500256/1ecbb7f7-92b4-4cef-91ba-f0df9c35f2be">
+<img width="700" alt="스크린샷 2024-07-03 오후 11 22 08" src="https://github.com/Heo-Jeong-Eun/Google-Machine-Learning-Bootcamp/assets/60500256/1ecbb7f7-92b4-4cef-91ba-f0df9c35f2be">
 
 > L : Gradient Descent / R : Cost Function
 
@@ -174,7 +174,7 @@ Cost Function J는 Convex Function이기 때문에 내려가게 되면 결국 �
 
 **α**는 Gradient Descent로 이동하는 거리를 조절하기 위한 변수로 **Learning Rate**를 의미한다. 
 
-![Untitled](https://github.com/Heo-Jeong-Eun/Google-Machine-Learning-Bootcamp/assets/60500256/74c5b60f-bc63-4538-b7da-a1a09ec14765)
+<img width="500" src="https://github.com/Heo-Jeong-Eun/Google-Machine-Learning-Bootcamp/assets/60500256/74c5b60f-bc63-4538-b7da-a1a09ec14765">
 
 최소값 지점을 목표로 어떤 지점에서 w 값을 정할 때 J(w)의 값은 감소해야 한다. 
 
@@ -214,9 +214,9 @@ Computation Graph는 왼쪽 → 오른쪽 계산을 구성한다.
 
 Computation Graph에서 Back Propagation을 사용해 미분 값을 구할 것이다. Derivatives의 경우 오른쪽 → 왼쪽으로 계산한다. 
 
-<img width="687" alt="스크린샷 2024-07-04 오전 12 12 34" src="https://github.com/Heo-Jeong-Eun/Google-Machine-Learning-Bootcamp/assets/60500256/e5738087-df26-463b-b3ae-e6cc6babc875">
+<img width="700" alt="스크린샷 2024-07-04 오전 12 12 34" src="https://github.com/Heo-Jeong-Eun/Google-Machine-Learning-Bootcamp/assets/60500256/e5738087-df26-463b-b3ae-e6cc6babc875">
 
-![스크린샷 2024-07-04 오전 12 14 45](https://github.com/Heo-Jeong-Eun/Google-Machine-Learning-Bootcamp/assets/60500256/b41985a8-7f7a-408a-ac20-79e6d6ca97f1)
+<img width="700" src="https://github.com/Heo-Jeong-Eun/Google-Machine-Learning-Bootcamp/assets/60500256/b41985a8-7f7a-408a-ac20-79e6d6ca97f1">
 
 ## Logistic Regression Gradient Descent
 
@@ -306,7 +306,7 @@ for loop이 아닌 np.dot()을 사용하게 되면 복잡한 연산 과정 없�
 
 **BroadCasting**은 **Numpy가 산술 연산 중에 다른 모양 배열을 처리하는 방법**이다. 
 
-![Untitled (3)](https://github.com/Heo-Jeong-Eun/Google-Machine-Learning-Bootcamp/assets/60500256/27842240-81d7-41fc-884e-eb78e2298a76)
+<img width="500" src="https://github.com/Heo-Jeong-Eun/Google-Machine-Learning-Bootcamp/assets/60500256/27842240-81d7-41fc-884e-eb78e2298a76">
 
 배열 a(3)와 b(1)을 곱하는 경우, 배열의 갯수가 다르기 때문에 원래는 연산이 불가능하다. 
 
@@ -314,11 +314,11 @@ for loop이 아닌 np.dot()을 사용하게 되면 복잡한 연산 과정 없�
 
 BroadCasting을 사용하게 되면 훨씬 더 효율적인 Memory 사용이 가능해진다. 
 
-![Untitled (4)](https://github.com/Heo-Jeong-Eun/Google-Machine-Learning-Bootcamp/assets/60500256/558f2060-5367-45e2-a3d3-55bba7197f53)
+<img width="500" src="https://github.com/Heo-Jeong-Eun/Google-Machine-Learning-Bootcamp/assets/60500256/558f2060-5367-45e2-a3d3-55bba7197f53>
 
 행이 아닌 열에도 BroadCasting은 활용 된다. 만일 후행 차원이 같지 않으면 BroadCasting 오류가 생기게 된다. 
 
-![Untitled (5)](https://github.com/Heo-Jeong-Eun/Google-Machine-Learning-Bootcamp/assets/60500256/a13ff97f-9d4d-43ca-8a3c-b2bc3dd4602d)
+<img width="500" src="https://github.com/Heo-Jeong-Eun/Google-Machine-Learning-Bootcamp/assets/60500256/a13ff97f-9d4d-43ca-8a3c-b2bc3dd4602d>
 
 BroadCasting이 세로 방향으로만 이루어지는 것은 아니다. 
 
