@@ -139,3 +139,5 @@ ReLU, Leaky ReLU는 0을 기점으로 모양이 변하므로 Derivatives의 값�
 <img width="693" alt="스크린샷 2024-07-05 오후 10 22 13" src="https://github.com/user-attachments/assets/2cf7ad3c-64c5-48b3-801c-f10c80462d7d">
 
 또한 w를 너무 크게 초기화 하게 되면 Derivatives 값이 0에 가까워 Training의 의미가 퇴색되거나 Function 값이 너무 커져 Training 속도가 느려지는 문제가 생긴다. 따라서 **Random 값에 0.01을 곱해준다.**
+
+> The Lecture Notes referred to <a href = 'https://www.deeplearning.ai/'>DeepLearning.AI</a>
