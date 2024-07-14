@@ -4,13 +4,13 @@
 
 Training Set, Dev Set, Test Set를 잘 설정하면 좋은 성능을 갖는 NN을 빠르게 찾는데 도움이 된다. 
 
-<img width="712" alt="스크린샷 2024-07-13 오후 2 40 43" src="https://github.com/user-attachments/assets/54679c0d-13a5-478d-aefd-1073211f494d">
+<img width="650" alt="스크린샷 2024-07-13 오후 2 40 43" src="https://github.com/user-attachments/assets/54679c0d-13a5-478d-aefd-1073211f494d">
 
 NN을 구현할 때는 위와 같이 결정해야 할 Hyperparameter가 많은데 처음부터 적절한 Hyperparameter 값을 선택하는 것은 거의 불가능하다.
 
 따라서 **반복적인 실험 과정을 통해 적절히 Hyperparameter를 바꿔가며 더 좋은 성능을 갖는 NN을 찾아야 한다.** 
 
-![Untitled](https://github.com/user-attachments/assets/d16d7a9c-777d-4270-af43-0fce3261908a)
+<img width="650" src="https://github.com/user-attachments/assets/d16d7a9c-777d-4270-af43-0fce3261908a">
 
 위와 같이 Data가 있을 때, 일부분을 **Training Set, Dev Set, Test Set**으로 분리할 수 있다. 
 
@@ -34,7 +34,7 @@ Dev Set이나 Test Set은 Algorithm을 평가하기에 충분하기만 하면 �
 
 ## Bias / Variance
 
-<img width="752" alt="스크린샷 2024-07-13 오후 3 01 20" src="https://github.com/user-attachments/assets/fe58f20e-dcb4-4bff-bc8b-b6e5ae3b23cb">
+<img width="650" alt="스크린샷 2024-07-13 오후 3 01 20" src="https://github.com/user-attachments/assets/fe58f20e-dcb4-4bff-bc8b-b6e5ae3b23cb">
 
 첫 번째 High Bias Graph는 Data가 잘 Fitting 되지 않아 Underfitting 문제를 가지고 있다. 
 
@@ -42,7 +42,7 @@ Dev Set이나 Test Set은 Algorithm을 평가하기에 충분하기만 하면 �
 
 해당 Graph의 경우 x1, x2 두 개 Input에 대해 Decision Boundary를 그렸기 때문에 시각적으로 확인이 가능하지만 고차원의 Input을 가지는 경우 시각화가 어렵다. 
 
-![Untitled (1)](https://github.com/user-attachments/assets/236626bd-0df5-4790-bae2-3f2df8b73f0f)
+<img width="650" src="https://github.com/user-attachments/assets/236626bd-0df5-4790-bae2-3f2df8b73f0f">
 
 Cat Classification이 있고 Input이 고양이인 경우 Y = 1, 아닌 경우 Y = 0으로 나타낸다. 
 
@@ -50,7 +50,7 @@ Cat Classification이 있고 Input이 고양이인 경우 Y = 1, 아닌 경우 Y
 
 일반적으로 사람은 완벽하게 고양이를 인식하기 때문에 Human Error는 0에 가깝다. 
 
-![Untitled (2)](https://github.com/user-attachments/assets/d4980e59-d145-4f4c-8ccd-bb92fd53c235)
+<img width="650" src="https://github.com/user-attachments/assets/d4980e59-d145-4f4c-8ccd-bb92fd53c235">
 
 만약 Train Set Error가 1%이고 Dev Set Error가 11%인 경우, **Training Set에서는 잘 동작하지만 Dev Set에서는 잘 동작하지 못하는 것**으로 볼 수 있다. 
 
@@ -80,7 +80,7 @@ Training Algorithm이 Data에 잘 Fitting 되지 않은 경우로 **Underfitting
 
 그렇다면 High Bias, High Variance는 어떻게 발생하는 것일까
 
-![Untitled (3)](https://github.com/user-attachments/assets/a72de0fa-01f6-40cc-bf7f-d32cf8a1b3ae)
+<img width="650" src="https://github.com/user-attachments/assets/a72de0fa-01f6-40cc-bf7f-d32cf8a1b3ae">
 
 위 Graph에서 보라색 직선으로 분류되는 경우는 Data를 Underfitting 하기 때문에 High Bias를 가지고 있다. 
 
@@ -94,7 +94,7 @@ Training Algorithm이 Data에 잘 Fitting 되지 않은 경우로 **Underfitting
 
 ## Basic “Recipe” for Machine Learning
 
-<img width="638" alt="스크린샷 2024-07-13 오후 4 27 09" src="https://github.com/user-attachments/assets/45ac00c2-375a-47a2-b0e3-ac9d0419e5ac">
+<img width="650" alt="스크린샷 2024-07-13 오후 4 27 09" src="https://github.com/user-attachments/assets/45ac00c2-375a-47a2-b0e3-ac9d0419e5ac">
 
 **Training Set Error, DEV Set Error를 이용해 Bias, Variance 문제를 진단할 수 있다.** 
 
@@ -135,7 +135,7 @@ DL 초기, 적용 방법이 많이 없을 때 한 가지 요소의 희생 없이
 
 <img width="688" alt="스크린샷 2024-07-13 오후 5 56 21" src="https://github.com/user-attachments/assets/087c8065-b637-46ea-9442-4872b39055b7">
 
-Logistic Regression, Cost Function J + Regularization항 추가 
+> Logistic Regression, Cost Function J + Regularization항 추가 
 
 여기서 
 
@@ -147,7 +147,7 @@ Logistic Regression, Cost Function J + Regularization항 추가
 
 <img width="390" alt="스크린샷 2024-07-13 오후 5 59 20" src="https://github.com/user-attachments/assets/98ee1a8b-2428-4ea4-85e6-da57ada53f4b">
 
-b에 대한 Regularization항
+> b에 대한 Regularization항
 
 를 추가할 수도 있지만 Parameter b는 단순한 상수이며 Parameter w는 보통 높은 차수이기 때문에 b를 추가해도 의미가 없으므로 생략한다. 
 
@@ -157,7 +157,7 @@ L1 Regularization을 사용하게 되면 아래와 같다. 아래 첨자로 1이
 
 <img width="594" alt="스크린샷 2024-07-13 오후 6 01 45" src="https://github.com/user-attachments/assets/2aa450ca-30ba-4eb2-b034-c7b9bdd3004f">
 
-L1 Regularization
+> L1 Regularization
 
 만약 L1 Regularization을 사용한다면 w Vector 안에 0 값이 많이 존재하게 되어 Sparse 한 상태가 된다. 
 
@@ -171,17 +171,17 @@ Parameter Set이 0이고, Model에 저장하는데 더 적은 Memory를 사용�
 
 <img width="674" alt="스크린샷 2024-07-13 오후 7 58 49" src="https://github.com/user-attachments/assets/ebee02f1-b2d0-4e29-b35d-f5b07bf7bc3d">
 
-NN에서 Regularization항 추가한 Cost Function J
+> NN에서 Regularization항 추가한 Cost Function J
 
 Regularization에서 Norm은 아래와 같다. 
 
 <img width="634" alt="스크린샷 2024-07-13 오후 7 59 17" src="https://github.com/user-attachments/assets/fa3bb7b3-790c-4a11-bdda-06e8ac636cc9">
 
-Norm
+> Norm
 
 여기서 w[l]은 (n[l], n[l - 1]) 차원으로 Norm은 Frobenius라고 불리며 아래 첨자 F가 붙어서 
 
-![스크린샷 2024-07-13 오후 8 00 46](https://github.com/user-attachments/assets/360a29af-bea5-43b5-bb48-3a979fb49a5e)
+<img width="400" src="https://github.com/user-attachments/assets/360a29af-bea5-43b5-bb48-3a979fb49a5e">
 
 로 쓰이기도 한다. 
 
@@ -266,7 +266,7 @@ Sample에 대해 **기존보다 더 작은 Network로 Training 하기 때문에 
 2. d3가 keep_prob보다 작은지 확인한다. 여기서 keep_prob = 0.8이고 그렇다면 Node가 제거될 확률은 0.2가 된다. 
     
     ```python
-    	d3 = np.random.rand(a3.shape[0], a3.shape[1]) < keep_prob
+    d3 = np.random.rand(a3.shape[0], a3.shape[1]) < keep_prob
     ```
     
     d3은 0.8의 확률로 1이 되고 0.2의 확률로 0인 Vector가 된다. 
@@ -328,7 +328,7 @@ Weight를 분산시키면 **Weight의 Norm을 축소시키는 효과**가 있다
 
 <img width="689" alt="스크린샷 2024-07-13 오후 8 51 17" src="https://github.com/user-attachments/assets/fa4b6908-b39a-41c1-94dd-765c1833c60b">
 
-Input Feature가 3개인 NN
+> Input Feature가 3개인 NN
 
  Dropout을 적용할 때 선택해야 하는 매개변수 중 하나는 **keep_prob**인데, 이 값은 **Layer 별로 설정이 가능**하다. 
 
@@ -356,14 +356,14 @@ Dropout을 사용하게 되면 Cross Validation에서 설정해야하는 **Hyper
 
 L2 Regularization, Dropout 외 Overfitting을 줄일 수 있는 방법이 있다. 
 
-![Untitled (9)](https://github.com/user-attachments/assets/d14bf9df-3d53-4dee-a37b-1248706c7ea3)
+<img width="650" src="https://github.com/user-attachments/assets/d14bf9df-3d53-4dee-a37b-1248706c7ea3">
 Data를 더 이상 수집할 수 없는 경우 **Data Augmentation**이라는 것을 사용한다. 
 
 Image를 가로로 뒤집거나 회전, Zoom In, 찌그러뜨리거나 확대해 Data Set을 확보하는 것으로 새로운 Data를 추가하는 것보다 좋지 않지만 시간을 절약해주는 장점이 있다. 
 
 이 방법을 통해 큰 비용 없이 Overfitting을 줄일 수 있다. 
 
-![Untitled (10)](https://github.com/user-attachments/assets/bd147db0-6a90-47af-9bf2-1e9b8261fc71)
+<img width="650" src="https://github.com/user-attachments/assets/bd147db0-6a90-47af-9bf2-1e9b8261fc71">
 
 **Early Stopping**은 **Gradient Descent를 실행하면서 Training Set Error나 J Function과 Dev Set Error Graph를 그려 w가 Middle Size일 때 중지시키는 방법**이다. 
 
@@ -475,7 +475,7 @@ Activation Function은 g(z) = z로 Linear하며, Parameter b = 0으로 무시한
 
 이 경우 결과 값은 
 
-<img width="644" alt="스크린샷 2024-07-14 오전 12 41 27" src="https://github.com/user-attachments/assets/561bb96d-44a8-4530-8d18-abec0e4be42d">
+<img width="500" alt="스크린샷 2024-07-14 오전 12 41 27" src="https://github.com/user-attachments/assets/561bb96d-44a8-4530-8d18-abec0e4be42d">
 
 가 될 것이다. 
 
