@@ -4,7 +4,7 @@
 
 **Batch**는 한번에 처리하는 Data의 묶음을 의미, 중괄호를 사용해 아래와 같이 표현할 수 있다 .
 
-![스크린샷 2024-07-16 오후 3.45.36.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/b8076850-8628-41ea-9b5e-a3111230d0da/e7ad7dc7-d1ef-44df-bdb3-d9c925f0ef4e/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2024-07-16_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_3.45.36.png)
+<img width="690" alt="스크린샷 2024-07-16 오후 3 45 36" src="https://github.com/user-attachments/assets/bd54e3c6-2e3d-4c3f-8a0b-02ef42d15ae1">
 
 ```
 {Batch 번호} [Layer 번호] (Example 번호)
@@ -26,7 +26,7 @@ m = 5,000,000인 Training Set이 있을 때 각 1000개의 Example을 갖도록 
 
 최종적으로 x{5000}가 되고 Y에 대해서도 동일하게 나누어 준다. 
 
-![스크린샷 2024-07-16 오후 3.41.30.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/b8076850-8628-41ea-9b5e-a3111230d0da/7f09cca0-756a-4eff-b8c1-e0ce9d96f39e/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2024-07-16_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_3.41.30.png)
+<img width="690" alt="스크린샷 2024-07-16 오후 3 41 30" src="https://github.com/user-attachments/assets/ca39787d-9a5c-4706-b113-6e375ab74b94">
 
 각각의 X(nx, m)의 Mini-Batch들은 (nx, 1000)의 차원을 갖게 되고, Y(1, m)은 (1, 1000)의 차원을 갖게 된다. 
 
@@ -50,9 +50,9 @@ m = 5,000,000인 Training Set이 있을 때 각 1000개의 Example을 갖도록 
 1 Epoch = 1 Pass Through Data
 ```
 
-![for loop 1번 == 1 Epoch, 해당 코드에서 한 번의 Gradient Descent에서 총 5000 Epoch를 진행한다. 따라서 전체 Iteration을 위한 또 하나의 for loop가 필요하다. ](https://prod-files-secure.s3.us-west-2.amazonaws.com/b8076850-8628-41ea-9b5e-a3111230d0da/8a126602-3021-4f0a-a55a-15b9800c5c6b/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2024-07-16_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_4.05.55.png)
+<img width="690" alt="스크린샷 2024-07-16 오후 4 05 55" src="https://github.com/user-attachments/assets/40d6269c-468d-4518-9593-b420498210dc">
 
-for loop 1번 == 1 Epoch, 해당 코드에서 한 번의 Gradient Descent에서 총 5000 Epoch를 진행한다. 따라서 전체 Iteration을 위한 또 하나의 for loop가 필요하다. 
+> for loop 1번 == 1 Epoch, 해당 코드에서 한 번의 Gradient Descent에서 총 5000 Epoch를 진행한다. 따라서 전체 Iteration을 위한 또 하나의 for loop가 필요하다. 
 
 대체로 m이 매우 클 때 Mini-Batch는 Batch보다 훨씬 빠르게 진행된다. 
 
@@ -60,7 +60,7 @@ Mini-Batch는 전체 Data를 나누어 훨씬 더 빠르게 자주 Update하는 
 
 **전체 Data를 Mini-Batch Size만큼 나누게 되면 그만큼 계산량이 줄어 더 빠르게 Parameter를 Update 할 수 있어 이론상 Mini-Batch Size 배수만큼 더 빠른 Training이 가능하다.** 
 
-![스크린샷 2024-07-16 오후 3.41.52.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/b8076850-8628-41ea-9b5e-a3111230d0da/f7e81381-4f9f-40cc-983b-6ba33e686ef6/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2024-07-16_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_3.41.52.png)
+<img width="690" alt="스크린샷 2024-07-16 오후 3 41 52" src="https://github.com/user-attachments/assets/7090b5f2-110c-43e7-ae12-58d5bb7bd087">
 
 ## Understanding Mini-Batch Gradient Descent
 
@@ -70,7 +70,7 @@ Mini-Batch는 전체 Data를 나누어 훨씬 더 빠르게 자주 Update하는 
 
 Learning Rate가 매우 큰 경우 이러한 현상이 발생할 수 있다. 
 
-![스크린샷 2024-07-16 오후 4.23.37.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/b8076850-8628-41ea-9b5e-a3111230d0da/c03d45bc-05a2-4a6c-b145-5fd93822cd5d/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2024-07-16_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_4.23.37.png)
+<img width="690" alt="스크린샷 2024-07-16 오후 4 23 37" src="https://github.com/user-attachments/assets/297fc05c-f171-4dd4-96e9-cbb005c7c373">
 
 Mini-Batch Gradient Descent의 경우 매 반복마다 X{t}, Y{t}를 처리하게 되는데 이 값을 통해 J{t}를 구하게 되고, 매 반복마다 다른 Training Set에서 Train을 진행하는 것과 동일하다. 
 
@@ -78,11 +78,11 @@ Mini-Batch Gradient Descent의 경우 매 반복마다 X{t}, Y{t}를 처리하�
 
 **Mini-Batch Size가 1인 경우 Stochastic Gradient Descent**으로 각 Example 하나가 Mini-Batch가 되는 것이다. 
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/b8076850-8628-41ea-9b5e-a3111230d0da/35245ece-1793-4408-b7e9-b2b7c0fb1c2e/Untitled.png)
+![Untitled](https://github.com/user-attachments/assets/dfa7b9f6-c323-441c-930f-48d504c22592)
 
 위 두 가지의 경우 최적의 값을 찾아가는 모습은 아래와 같다. 파란색이 Batch Gradient Descent이고 보라색이 Stochastic Gradient Descent을 나타낸다. 
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/b8076850-8628-41ea-9b5e-a3111230d0da/37b3abd4-417d-4aad-bf4b-0431c0afd8c5/Untitled.png)
+![Untitled (1)](https://github.com/user-attachments/assets/d9e3c73a-3769-41dc-ae41-3c559be36a10)
 
 실제로 우리가 사용하는 **Mini-Batch Size는 1-m 사이의 값**이 될 것이다. 
 
@@ -108,8 +108,7 @@ Noise가 많이 발생할 수 있지만 더 작은 Learning Rate를 사용해 �
     
     한 번의 Iteration으로 5000 Epoch의 Gradient Descent Step을 수행한다. 
     
-
-![스크린샷 2024-07-16 오후 4.39.11.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/b8076850-8628-41ea-9b5e-a3111230d0da/6bb2b56a-ae17-48f0-8238-fefc752e8b7f/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2024-07-16_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_4.39.11.png)
+<img width="690" alt="스크린샷 2024-07-16 오후 4 39 11" src="https://github.com/user-attachments/assets/4bb2819e-1965-41e3-9a4c-5652ccd0902c">
 
 적절한 Mini-Batch Size를 선택하면 최적값을 찾아갈 때 왼쪽 Graph와 같이 진행된다. 
 
@@ -130,7 +129,7 @@ Noise가 많이 발생할 수 있지만 더 작은 Learning Rate를 사용해 �
 
 **Exponentially Weighted Averages**를 통계학에서는 Exponentially Moving Averages, **EMA**라고 한다. 
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/b8076850-8628-41ea-9b5e-a3111230d0da/ad03f3d2-1ac0-474e-8154-25dea8434f1f/Untitled.png)
+![Untitled (2)](https://github.com/user-attachments/assets/818022d0-60b1-40ae-8d6f-d61e0d0014cf)
 
 London의 날씨 예보를 보면서 EMA 예시를 들어볼 것이다. 1년동안 London의 날씨를 표로 나타내면 오른쪽과 같다. 
 
@@ -138,15 +137,15 @@ London의 날씨 예보를 보면서 EMA 예시를 들어볼 것이다. 1년동�
 
 날씨 변화 Trend를 구하고 싶은 경우 Local 평균, 온도에 대한 이동 평균값을 구하기 위해서는 아래와 같이 구하면 된다. 
 
-![스크린샷 2024-07-17 오후 2.22.56.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/b8076850-8628-41ea-9b5e-a3111230d0da/367c34ba-027f-432a-aa84-797d73257a3e/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2024-07-17_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_2.22.56.png)
+<img width="660" alt="스크린샷 2024-07-17 오후 2 22 56" src="https://github.com/user-attachments/assets/5a9e7516-b3b4-4d0a-b43c-edb0c07b61f9">
 
 이렇게 구하면 다음과 같이 빨간색 Graph로 나타낼 수 있고, 각 days의 온도를 Moving Average로 나타낸 EMA를 구할 수 있다. 
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/b8076850-8628-41ea-9b5e-a3111230d0da/2e2f4e45-594a-4c3d-b16e-e7bcde02a2b2/Untitled.png)
+![Untitled (3)](https://github.com/user-attachments/assets/b1b6232b-dd0d-41e2-a544-76fcfcb6c3fe)
 
 위 공식의 0.9를 β로 변경해서 나타내면 아래와 같다. 
 
-![스크린샷 2024-07-17 오후 2.26.56.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/b8076850-8628-41ea-9b5e-a3111230d0da/40df6acc-baec-48e3-a264-8637ad670bf9/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2024-07-17_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_2.26.56.png)
+<img width="660" alt="스크린샷 2024-07-17 오후 2 26 56" src="https://github.com/user-attachments/assets/8121a503-cd3c-471e-b077-e05e749d24b8">
 
 여기서 Vt는 대략적으로 (1 / 1 - β)days의 평균 기온이 된다. 
 
@@ -154,29 +153,29 @@ London의 날씨 예보를 보면서 EMA 예시를 들어볼 것이다. 1년동�
 
 만약 β = 0.98로 지정된다면 지난 50일간의 평균 기온과 비슷하다. Graph로 나타내면 초록색 선이 된다. 
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/b8076850-8628-41ea-9b5e-a3111230d0da/f8648c31-b9bc-4208-b3c9-a23281023943/Untitled.png)
+![Untitled (4)](https://github.com/user-attachments/assets/fef2b34f-6f94-4a3f-9db9-746abbc1d49a)
 
 β = 0.5라면 2일간의 평균 기온이기 때문에 노란색 Graph처럼 매우 Nosiy한 결과를 얻을 것이고, Outliner에 취약하게 된다. 하지만 기온이 변하는 것을 더 빨리 반영시켜준다. 
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/b8076850-8628-41ea-9b5e-a3111230d0da/6b305d4c-18f4-4af6-952f-768dd36cebe3/Untitled.png)
+![Untitled (5)](https://github.com/user-attachments/assets/74d31778-6ff8-4133-93f4-ac3ee2ac7c3e)
 
 ## Understanding Exponentially Weighted Averages
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/b8076850-8628-41ea-9b5e-a3111230d0da/51419c31-bb87-4468-abd9-4b970f4c93bc/Untitled.png)
+![Untitled (5)](https://github.com/user-attachments/assets/d34368dd-e249-4f73-8a9c-9f1ca2451675)
 
-![스크린샷 2024-07-17 오후 2.30.47.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/b8076850-8628-41ea-9b5e-a3111230d0da/3589b2f8-4240-4296-a8f9-f8c0ffca5d08/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2024-07-17_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_2.30.47.png)
+<img width="660" alt="스크린샷 2024-07-17 오후 2 30 47" src="https://github.com/user-attachments/assets/7fbc4550-1fb8-412a-9c32-c54c82cb798c">
 
 위 식에서 β의 값을 0.9, 0.98, 0.5로 설정했을 때 위와 같은 빨간색, 초록색, 노란색 Graph를 얻을 수 있었는데 조금 더 수학적으로 일별 평균 기온을 어떻게 산출하면 아래와 같다. 
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/b8076850-8628-41ea-9b5e-a3111230d0da/833f4aed-f215-499c-b331-2d1b597a478d/Untitled.png)
+![Untitled (7)](https://github.com/user-attachments/assets/6f0df95f-9f6d-4570-98f9-1b3f54d6f346)
 
-![V100](https://prod-files-secure.s3.us-west-2.amazonaws.com/b8076850-8628-41ea-9b5e-a3111230d0da/20e72221-e4b0-4b9c-ac93-f9674a6cb9dc/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2024-07-17_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_2.33.34.png)
+<img width="666" alt="스크린샷 2024-07-17 오후 2 33 34" src="https://github.com/user-attachments/assets/4d82418b-049e-4ec1-b1e0-8a091be1257e">
 
-V100
+> V100
 
 일별 기온을 기하급수적으로 감수하는 함수에 곱해 더하는 것이다. 아래 두 Graph 곱의 합을 의미한다. 
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/b8076850-8628-41ea-9b5e-a3111230d0da/185057c6-6ac7-4e06-818c-65df066f871a/Untitled.png)
+![Untitled (8)](https://github.com/user-attachments/assets/82a33e6b-59bf-4705-a144-b86e4aec7239)
 
 이런 점 때문에 Exponentally Weighted Average라고 부른다. 
 
@@ -190,7 +189,7 @@ V100
 
 대략적인 평균 일수를 나타낸 것이기 때문에 정식 수학적인 표현은 아니다. 
 
-![스크린샷 2024-07-17 오후 2.52.43.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/b8076850-8628-41ea-9b5e-a3111230d0da/afc6007e-6027-4c27-a8ef-53f97aa4e018/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2024-07-17_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_2.52.43.png)
+<img width="673" alt="스크린샷 2024-07-17 오후 2 52 43" src="https://github.com/user-attachments/assets/069c1fb4-b2ff-418b-9d40-3618e5b06412">
 
 v0은 0으로 초기화하고 그 다음에 첫째 날의 v1을 구하고 다음에 v2를 구하게 된다. 
 
@@ -208,13 +207,13 @@ v0은 0으로 초기화하고 그 다음에 첫째 날의 v1을 구하고 다음
 
 EMA를 구현하는 방법에 대해서 배웠는데, 여기서 Bias Correction이라고 하는 세부적인 기술이 있다. 이 방법은 EMA를 조금 더 정확하게 계산할 수 있도록 해준다. 
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/b8076850-8628-41ea-9b5e-a3111230d0da/e861780f-81b2-4706-8949-338906d51366/Untitled.png)
+![Untitled (9)](https://github.com/user-attachments/assets/bb5cece2-9cc3-4132-a1c5-e330c45fa2bc)
 
 이전에 β의 값이 0.9와 0.98인 Graph를 보았는데, 실제로 위와 같은 Graph가 나오지는 않는다. 
 
 β가 0.98일 경우 실제 Graph는 아래와 보라색과 같다. 
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/b8076850-8628-41ea-9b5e-a3111230d0da/f5ad6143-af6d-4097-b85c-7c659f9d6e85/Untitled.png)
+![Untitled (10)](https://github.com/user-attachments/assets/6dc03803-561e-4fd2-9c6e-d84c8e6cd695)
 
 보라색 Graph는 매우 낮은 곳에서 시작한다. EMA를 구할 때 v0 = 0으로 초기화 하고 진행한다. 
 
@@ -230,13 +229,13 @@ v1은 0.02θ1이 되는 것이고, 화씨 40도인 경우 v1은 0.02 * 40으로 
 
 t = 2일 때를 살펴보면 아래와 같다. 
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/b8076850-8628-41ea-9b5e-a3111230d0da/be1b5134-e1aa-4000-af0f-45f2169b0f4d/Untitled.png)
+![Untitled (11)](https://github.com/user-attachments/assets/2aa516ef-ae45-4bac-9bc9-82a5f4f766ef)
 
 초기 EMA 값들을 1 - βt로 보정해주게 되고 t값이 충분히 커지면 βt는 0으로 수렴하게 되고 Bias Correction의 영향은 사라지게 된다. 
 
 이 방법을 통해 초반부 EMA 값을 보정해주고 보라색 Graph가 초록색 Graph에 맞춰 들어가도록 해준다. 
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/b8076850-8628-41ea-9b5e-a3111230d0da/8a58496a-ce12-4718-98d5-a954593e6daa/Untitled.png)
+![Untitled (12)](https://github.com/user-attachments/assets/5cdd5d11-2034-4cb3-90ec-c2ad0ea385e5)
 
 ML에서는 EMA를 구현할 때 Bias Correction을 보통 신경쓰지 않고 적용하지 않는다. 
 
@@ -252,7 +251,7 @@ Bias Correction은 더 좋은 평균치를 일찍 구하는데 도움이 된다.
 
 Algorithm의 **기본 Idea는 Gradient Descent의 EMA를 구하고 이 값을 이용해 Parameter W를 Update하는 것**이다. 
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/b8076850-8628-41ea-9b5e-a3111230d0da/eb3dea42-d656-47af-9b7a-a66108ce62b4/Untitled.png)
+![Untitled (13)](https://github.com/user-attachments/assets/e2214fea-6b0d-42af-86dd-ee8eee628734)
 
 위와 같은 Cost Function을 최적화시키려고 한다고 할 때, Gradient Descent나 Mini-Batch Gradient Descent를 사용하면 파란색 Graph처럼 빨간색의 최소값을 향해 왔다갔다 진동을 하면서 접근하게 된다. 
 
@@ -266,7 +265,7 @@ Algorithm의 **기본 Idea는 Gradient Descent의 EMA를 구하고 이 값을 �
 
 **Momentum Algorithm**은 아래와 같다. Layer를 나타내는 위첨자 [l]은 생략한다.
 
-![스크린샷 2024-07-17 오후 3.27.43.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/b8076850-8628-41ea-9b5e-a3111230d0da/c6243d15-55b0-4554-88ce-12e9bbac923c/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2024-07-17_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_3.27.43.png)
+<img width="673" alt="스크린샷 2024-07-17 오후 3 27 43" src="https://github.com/user-attachments/assets/405a5e98-a94c-48e2-b763-e986ebb2bd8a">
 
 현재 Mini-Batch에서 dW와 dB를 구한다. 
 
@@ -274,13 +273,13 @@ Algorithm의 **기본 Idea는 Gradient Descent의 EMA를 구하고 이 값을 �
 
 **세로축의 변동 평균은 거의 0**이 되고, **가로축의 변동 평균이 꽤 큰 값**이 되어 아래와 같이 빨간색 Graph처럼 **최소값을 향해 접근**하게 된다. 
 
-![스크린샷 2024-07-17 오후 3.31.04.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/b8076850-8628-41ea-9b5e-a3111230d0da/73932d39-7748-443a-b2ad-62f82620044d/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2024-07-17_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_3.31.04.png)
+<img width="673" alt="스크린샷 2024-07-17 오후 3 31 04" src="https://github.com/user-attachments/assets/ff0d3b9d-594c-45cd-b0dc-e9b1ef404790">
 
 Algorithm에서 dW와 db는 가속도의 역할을 하고, VdW, Vdb는 속도의 역할을 하게 되는 것이다. 
 
 **Momentum은 이전 Step에서 구한 dW와 db를 가지고 Update 되는 것이 아니라 이전 Iteration들의 dW와 db의 평균치를 가지고 Update 되는 것**이다. 
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/b8076850-8628-41ea-9b5e-a3111230d0da/83bd5d06-b8ef-4ddc-a2fd-3205da681479/Untitled.png)
+![Untitled (14)](https://github.com/user-attachments/assets/21ada356-04e6-4782-bc0f-0d32d92b0d77)
 
 위와 같이 정리할 수 있고, 여기서 Hyperparameter는 α, β 2가지이다. 
 
@@ -302,19 +301,19 @@ vdW = βvdW + dW로 나타난다. 이 경우 α 값이 그에 상응하는 값�
 
 이 Algorithm은 Root Mean Square Propagation의 약자인데 이 방법을 사용해 Gradient Descent의 속도를 증가시킬 수 있다. 
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/b8076850-8628-41ea-9b5e-a3111230d0da/1e8ee698-dc9c-4bfb-a2d4-7aa5ff3882e1/Untitled.png)
+![Untitled (15)](https://github.com/user-attachments/assets/be35e54c-f59b-415b-8161-3beb3c65e90a)
 
 **세로축을 Parameter b라고 하고, 가로축을 Parameter W라고 할 때 세로축은 더 느리고 가로축은 더 빠르게 Training 하기를 원한다.** 
 
 이때 RMSprop Algorithm은 아래와 같다. 
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/b8076850-8628-41ea-9b5e-a3111230d0da/a4613075-266a-4420-a66e-a822b721ae2e/Untitled.png)
+![Untitled (16)](https://github.com/user-attachments/assets/311169bb-aed3-494a-851b-918d4a901eb8)
 
 **RMSprop Algorithm**은 현재 Mini-Batch에 대해 dW, db를 구하고 VdW가 아닌 SdW 표기를 사용해 구하게 되는데 Momentum과 유사하지만 **dW와 db를 제곱해 SdW, Sdb를 구한다.** 
 
 이는 EMA의 제곱 평균을 구하는 것을 의미하고 이렇게 구한 SdW, Sdb를 가지고 Parameter를 아래와 같이 Update 하게 된다. 
 
-![스크린샷 2024-07-17 오후 3.54.18.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/b8076850-8628-41ea-9b5e-a3111230d0da/e4f8adf0-c1f1-447d-bb45-4dcef5813343/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2024-07-17_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_3.54.18.png)
+<img width="674" alt="스크린샷 2024-07-17 오후 3 54 18" src="https://github.com/user-attachments/assets/e6541428-3417-4734-a811-b588f52a24f6">
 
 위 예시의 가로축은 Parameter W, 세로축은 Parameter b라고 했는데 가로축의 변동은 증가시키고 세로축의 변동은 늦추고 싶기 때문에 **SdW는 비교적 작은 값**이 되어야 하고, **Sdb는 비교적 큰 값**이 되어야 한다. 
 
@@ -322,7 +321,7 @@ vdW = βvdW + dW로 나타난다. 이 경우 α 값이 그에 상응하는 값�
 
 가로축의 변통폭은 무뎌지고, 세로축의 변동폭은 커지도록 도와주고 아래와 초록색 Graph와 같은 모양으로 Update가 진행된다. 
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/b8076850-8628-41ea-9b5e-a3111230d0da/ffbf8066-f3c3-4d90-85e9-c8606b4b8861/Untitled.png)
+![Untitled (17)](https://github.com/user-attachments/assets/68f07ae5-dbba-48b2-bffe-e73913ba00b8)
 
 Parameter를 간단히 W, b로 나타냈는데 실제로는 고차원의 Parameter 공간에 있고 변동을 무디게 하려고 하는 세로축의 차원은 w1, w2, w17과 같은 Parameter Set의 합일 수 있고, 가로축의 차원은 w3, w4 등 Parameter Set의 합으로 나타낼 수 있다. 
 
@@ -336,7 +335,7 @@ RMSprop에서 Root SdW가 0에 가까워지면 이 값이 나누어지면서 폭
 
 어떤 값이 되어도 상관 없지만 이상적인 값은 10^-8이 기본값이고 아래와 같다. 
 
-![스크린샷 2024-07-17 오후 4.04.21.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/b8076850-8628-41ea-9b5e-a3111230d0da/c869d098-6b7c-4e33-b25e-3359ea1a02f3/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2024-07-17_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_4.04.21.png)
+<img width="658" alt="스크린샷 2024-07-17 오후 4 04 21" src="https://github.com/user-attachments/assets/c27042f3-2b3e-4136-a344-fdca68a4d385">
 
 이것이 **RMSprop**이며 **Momentum과 비슷하게 Gradient Descent를 진행할 때 진동을 감소시키는 효과가 있다.** 
 
@@ -346,13 +345,13 @@ RMSprop에서 Root SdW가 0에 가까워지면 이 값이 나누어지면서 폭
 
 **Adam Algorithm**은 **Momentum과 RMSprop을 합친 것**이다. 
 
-![스크린샷 2024-07-17 오후 4.07.56.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/b8076850-8628-41ea-9b5e-a3111230d0da/3743c0ae-b873-422c-82bf-ff956db0a5f9/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2024-07-17_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_4.07.56.png)
+<img width="658" alt="스크린샷 2024-07-17 오후 4 07 56" src="https://github.com/user-attachments/assets/4daff090-9fc3-4308-814e-a1701d815166">
 
 Momentum과 RMSprop을 각각 적용하면 **추가적으로 Adam에서는 Bias Correction도 같이 진행하게 된다.** 
 
 이렇게 구한 
 
-![스크린샷 2024-07-17 오후 4.08.46.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/b8076850-8628-41ea-9b5e-a3111230d0da/2415c55f-1168-4102-bc8a-b7f8c63aaf44/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2024-07-17_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_4.08.46.png)
+<img width="610" alt="스크린샷 2024-07-17 오후 4 08 46" src="https://github.com/user-attachments/assets/cb45a4bb-48c2-445b-be35-06117bc71980">
 
 를 가지고 Parameter W, b를 위와 같이 Update 하면 된다. 
 
@@ -376,7 +375,7 @@ Adam Algorithm에서는 몇 개의 Hyperparameter가 있는데, **Learning Rate�
 
 Mini-Batch Gradient Descent를 사용한다고 가정했을 때, Training을 반복하면서 최소값으로 향하는 경향이 있지만 정확하게 최소값으로 수렴하지는 않을 것이다. 
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/b8076850-8628-41ea-9b5e-a3111230d0da/5803cabd-3b65-4c72-bfbe-baf027aab82e/Untitled.png)
+![Untitled (18)](https://github.com/user-attachments/assets/fdc250f2-cae1-49cf-8d35-a2182e2b8f49)
 
 위와 같이 최소값 주변을 맴돌면서 절대로 수렴하지 않는다. 이는 **Learning Rate를 어떤 값으로 고정시켰고 Noise가 존재하기 때문**이다. 
 
@@ -386,23 +385,23 @@ Mini-Batch Gradient Descent를 사용한다고 가정했을 때, Training을 반
 
 결국에는 최소값 부근에서 매우 좁은 범위를 왔다 갔다 할 것이다. 이전처럼 큰 Learning Rate를 가지고 최고값 주변을 맴도는 것과 비교하면 훨씬 낫다. 
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/b8076850-8628-41ea-9b5e-a3111230d0da/e6979593-db77-4394-aea3-357302e487d8/Untitled.png)
+![Untitled (19)](https://github.com/user-attachments/assets/64476559-d629-42b8-8d94-b2cf1c40f8f4)
 
 **Learning Rate 구현**은 아래와 같다. 
 
-![스크린샷 2024-07-17 오후 4.29.30.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/b8076850-8628-41ea-9b5e-a3111230d0da/27151920-f404-471a-a61f-b8719ffe0dc8/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2024-07-17_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_4.29.30.png)
+<img width="652" alt="스크린샷 2024-07-17 오후 4 29 30" src="https://github.com/user-attachments/assets/fa79ba22-b1e8-419c-acae-ab7431c4cb5e">
 
 여기서 **Epoch는 각 Mini-Batch Set에 대해서 진행하는 것을 의미**하고 **α0은 초기 Learning Rate**이며 **Decay Late와 α0은 Hyperparameter**가 된다. 
 
 α0 = 0.2, Decay Rate = 1인 경우 아래와 같다. 
 
-![스크린샷 2024-07-17 오후 4.31.38.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/b8076850-8628-41ea-9b5e-a3111230d0da/b2b29c8e-4496-43d6-8b77-7520d43a065e/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2024-07-17_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_4.31.38.png)
+<img width="661" alt="스크린샷 2024-07-17 오후 4 31 38" src="https://github.com/user-attachments/assets/aea5809d-f4d4-4920-ae4a-5e17d5856a86">
 
 만약 **Learning Rate Decay** 방법을 사용한다면 **다양한 값으로 α0과 Decay Rate를 바꿔보며 잘 동작하는 값을 선택**해야 한다. 
 
 이 외 방법은 아래와 같다. 
 
-![스크린샷 2024-07-17 오후 4.33.00.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/b8076850-8628-41ea-9b5e-a3111230d0da/fe458f0d-9eb1-467c-bcb9-dafc66370f8e/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2024-07-17_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_4.33.00.png)
+<img width="664" alt="스크린샷 2024-07-17 오후 4 33 00" src="https://github.com/user-attachments/assets/83d6a0df-a9ee-4cec-9420-51890dae2cb6">
 
 Learning Rate Decay는 최후의 수단으로 나중에 사용해 볼 방법이다.
 
@@ -412,9 +411,9 @@ Learning Rate Decay는 최후의 수단으로 나중에 사용해 볼 방법이�
 
 초기 DL 분야에서 최적화 Algorithm이 좋지 않은 Local Optima로 수렴하는 것에 대한 우려가 있었다. 
 
-![초기 Local Optima에 대한 우려 ](https://prod-files-secure.s3.us-west-2.amazonaws.com/b8076850-8628-41ea-9b5e-a3111230d0da/4065593f-e754-40ad-b724-aaf834707476/Untitled.png)
+![Untitled (20)](https://github.com/user-attachments/assets/49edd47e-3f73-4c91-8bb5-8f2a43e936cd)
 
-초기 Local Optima에 대한 우려 
+> 초기 Local Optima에 대한 우려 
 
 위와 같은 경우는 Local Optima가 매우 많이 존재할 것이고 Training Algorithm이 Global Minimum이 아닌 Local Optima에 수렴하는 경우 쉽게 발생할 것이다. 
 
@@ -422,7 +421,7 @@ Learning Rate Decay는 최후의 수단으로 나중에 사용해 볼 방법이�
 
 NN Network를 새로 만들게 되면 기울기가 0인 지점에서 항상 Local인 것은 아니고 Cost Function에서 기울기가 0인 대부분의 지점들은 Saddle Point이다. 
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/b8076850-8628-41ea-9b5e-a3111230d0da/a1cde5cc-2966-43a3-9eb2-456d1fceeae7/Untitled.png)
+<img width="400" height="300" src="https://github.com/user-attachments/assets/436c2e4a-115c-494e-9acf-163ca54ddea6">
 
 즉, **대부분의 경우에는 위 Graph처럼 Saddle Point가 되고 실제 Local Minimum이 되는 확률은 매우 낮다.** 
 
@@ -430,7 +429,7 @@ NN Network를 새로 만들게 되면 기울기가 0인 지점에서 항상 Loca
 
 문제는 Plateaus이다. 이는 Training 속도를 저하시킬 수 있다. Plateaus 함수의 기울기 값이 0에 근접한 범위를 뜻하며 아래 그림과 같은 Graph를 의미한다. 
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/b8076850-8628-41ea-9b5e-a3111230d0da/e4f62b5a-b830-45e5-abc1-76cd86660297/Untitled.png)
+<img width="500" height="300" src="https://github.com/user-attachments/assets/663829d7-d037-41b5-ae38-53c0ecf396a9">
 
 기울기가 0이거나 0에 근접하기 때문에 표면이 매우 완만해서 Plateaus 구간을 빠져나오는데 많은 시간이 소요될 수 있다. 
 
