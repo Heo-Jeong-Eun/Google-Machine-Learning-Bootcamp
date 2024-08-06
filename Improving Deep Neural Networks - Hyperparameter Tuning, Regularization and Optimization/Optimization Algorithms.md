@@ -429,7 +429,7 @@ NN Network를 새로 만들게 되면 기울기가 0인 지점에서 항상 Loca
 
 문제는 Plateaus이다. 이는 Training 속도를 저하시킬 수 있다. Plateaus 함수의 기울기 값이 0에 근접한 범위를 뜻하며 아래 그림과 같은 Graph를 의미한다. 
 
-<img width="500" height="300" src="https://github.com/user-attachments/assets/663829d7-d037-41b5-ae38-53c0ecf396a9">
+<img width="600" height="300" src="https://github.com/user-attachments/assets/663829d7-d037-41b5-ae38-53c0ecf396a9">
 
 기울기가 0이거나 0에 근접하기 때문에 표면이 매우 완만해서 Plateaus 구간을 빠져나오는데 많은 시간이 소요될 수 있다. 
 
