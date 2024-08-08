@@ -356,7 +356,7 @@ Decision Boundary는 Logistic Regression과 유사한데, 각 Class간의 Decisi
 
 C = 4, 5, 6인 경우에는 다음과 같이 나타날 수 있다.
 
-![Untitled (22)](https://github.com/user-attachments/assets/84845740-0aeb-48b3-b15e-6dc48d8e8ee6)
+<img width="716" src="https://github.com/user-attachments/assets/84845740-0aeb-48b3-b15e-6dc48d8e8ee6">
 
 **DNN에서 Hidden Layer, Hidden Unit이 더 많은 경우 더 복잡한 Non-Linear Decision Boundary를 갖는 것도 가능하다.** 
 
